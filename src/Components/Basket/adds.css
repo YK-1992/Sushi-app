@@ -1,0 +1,37 @@
+.wrapper__adds{
+    padding: 2rem;
+
+
+}
+
+.adds__container{
+    display: flex;
+    flex-direction: column;
+    background: white;
+   
+
+}
+.title__adds{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  
+ 
+ 
+}
+
+.adds_block{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background: gainsboro;
+    padding: 2rem;
+    height: 70vh;
+}
+
+.pays__adds{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 1rem;
+}

@@ -1,0 +1,26 @@
+[
+    {
+        "img": "/right-quote-sign 1.png",
+        "comt": "Lorem ipsum dolor sit amet consectetur adipisicing elit. In asperiores soluta reprehenderit, ab saepe aut dolorem dolores facilis placeat, iste doloribus?",
+        "avatar": "/avatar/avatar1.jpg",
+        "name": "Ivona Nguen",
+        "mail" : "@ivan098"
+    },
+    {
+        "img": "/right-quote-sign 1.png",
+        "comt": "Lorem ipsum dolor sit amet consectetur adipisicing elit. In asperiores soluta reprehenderit, ab saepe aut dolorem dolores facilis placeat, iste doloribus?",
+        "avatar": "/avatar/avatar2.jpg",
+        "name": "Ivan Ivanov",
+
+        "mail" : "@van095"
+    },
+    {
+        "img": "/right-quote-sign 1.png",
+        "comt": "Lorem ipsum dolor sit amet consectetur adipisicing elit. In asperiores soluta reprehenderit, ab saepe aut dolorem dolores facilis placeat, iste doloribus?",
+        "avatar": "/avatar/avatar3.png",
+        "name": "Carol Becker",
+
+        "mail" : "@cho093"
+    }
+
+]

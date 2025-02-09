@@ -1,0 +1,23 @@
+.basket-stile{
+    padding-top: 4rem;
+    height: 90vh;
+}
+
+.basketContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.basketContainer h1{
+
+    font-size: 26px;
+    font-weight: 400;
+}
+.basketContainer p{
+font-size: 12;
+  width: 70vh; 
+    text-align: center;
+    padding-bottom: 3rem;
+}

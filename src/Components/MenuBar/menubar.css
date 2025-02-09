@@ -1,0 +1,12 @@
+.bar-section{
+    padding-top: 4rem;
+    min-height: 90vh;
+    background: E5E5E5;
+   
+
+}
+.container-barMenu h1{
+    text-align: center;
+    font-size: 26px;
+    font-weight: 400;
+}

@@ -1,0 +1,90 @@
+.container-about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container-about h1{
+    font-size: 26px;
+    font-weight: 500;
+}
+.about-blocks ul {
+    display: flex; 
+    flex-wrap: wrap;
+justify-content: center;
+  margin: 0 auto;
+   
+}
+.about-blocks li{
+    width: 260px;
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 14px;
+    padding-top: 1rem;
+    color: gray;
+  
+}
+.about-blocks h2{
+    color: black;
+    font-size: 17px;
+    font-weight: 500;
+}
+.about-blocks img{
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 2px 0px 4px grey;
+    
+}
+.about-inform-block{
+display: flex; 
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+
+}
+.about-date{
+    display: flex
+    ;
+        flex-direction: column;
+        background: white;
+        width: 330px;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        box-shadow: 1px 0px 7px grey;
+        border-radius: 10px;   
+}
+.about-date p{
+
+    font-size: 13px;
+    color: rgb(143, 141, 141);
+}
+.about-date-container{
+   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+    padding-bottom: 2rem;
+    
+}
+@media  (max-width: 768px) {
+
+    .about-date{
+        width: 290px;
+        height: 60%;
+    }
+    .about-date h3{
+        font-size: 13px;
+    }
+    .about-date h5{
+        font-size: 11px;
+    }
+    .about-date p{
+        font-size: 9px;
+    }
+
+}

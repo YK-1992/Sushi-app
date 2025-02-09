@@ -1,0 +1,400 @@
+[
+    {   "id": "1",
+        "name": "Sushi",
+        "img": "./menuBar/sushi1.png",
+        "cards": [
+            {
+                
+                "title": "Sushi Nor",
+                "date": "Lorem ipsum dolor sit amet consectetur adipisicing elit. In asperiores soluta reprehenderit, ab saepe aut dolorem dolores facilis placeat, iste doloribus?",
+                "price": "35 €",
+               "img": "/menuSushi/sushi1.jpg"
+              },
+              {
+               
+                "title": "Samurai",
+                "date": "Lorem ipsum dolor sit amet consectetur adipisicing elit. In asperiores soluta reprehenderit, ab saepe aut dolorem dolores facilis placeat, iste doloribus?",
+                "price": "29 €",
+                "img": "/menuSushi/sushi2.jpg"
+              },
+              {
+               
+                "title": "Saku Sushi",
+                "date": "Lorem ipsum dolor sit amet consectetur adipisicing elit. In asperiores soluta reprehenderit, ab saepe aut dolorem dolores facilis placeat, iste doloribus?",
+                "price": "39 €",
+                "img": "/menuSushi/sushi3.jpg"
+              },
+              {
+               
+                "title": "Zen Platter",
+                "date": "Lorem ipsum dolor sit amet consectetur adipisicing elit. In asperiores soluta reprehenderit, ab saepe aut dolorem dolores facilis placeat, iste doloribus?",
+                "price": "28 €",
+                "img": "/menuSushi/sushi3.jpg"
+              },
+              {
+                
+                "title": "Fujizu Sushi ",
+                "date": "Lorem ipsum dolor sit amet consectetur adipisicing elit. In asperiores soluta reprehenderit, ab saepe aut dolorem dolores facilis placeat, iste doloribus?",
+                "price": "43 €",
+                "img": "/menuSushi/sushi4.jpg"
+              },
+              {
+                
+                "title": "Kyoto Sushi",
+                "date": "Lorem ipsum dolor sit amet consectetur adipisicing elit. In asperiores soluta reprehenderit, ab saepe aut dolorem dolores facilis placeat, iste doloribus?",
+                "price": "19 €",
+                "img": "/menuSushi/sushi5.jpg"
+              } 
+        ]
+    },
+    {   "id": "2",
+        "name": "Sashimi",
+        "img": "./menuBar/sashimi.png",
+        "cards": [
+            {
+                
+                "title": "Sushi sur le noir",
+                "date": "Lorem ipsum dolor sit amet consectetur adipisicing elit. In asperiores soluta reprehenderit, ab saepe aut dolorem dolores facilis placeat, iste doloribus?",
+                "price": "35 €",
+                "img": "/menuSashimi/sashimi1.png"
+              },
+              {
+               
+                "title": "Samurai Selection",
+                "date": "Lorem ipsum dolor sit amet consectetur adipisicing elit. In asperiores soluta reprehenderit, ab saepe aut dolorem dolores facilis placeat, iste doloribus?",
+                "price": "29 €",
+                "img": "/menuSashimi/sashimi2.png"
+              },
+              {
+               
+                "title": "Sakura Set",
+                "date": "Lorem ipsum dolor sit amet consectetur adipisicing elit. In asperiores soluta reprehenderit, ab saepe aut dolorem dolores facilis placeat, iste doloribus?",
+                "price": "39 €",
+                "img": "/menuSashimi/sashimi3.png"
+              },
+              {
+               
+                "title": "Zen Platter",
+                "date": "Lorem ipsum dolor sit amet consectetur adipisicing elit. In asperiores soluta reprehenderit, ab saepe aut dolorem dolores facilis placeat, iste doloribus?",
+                "price": "28 €",
+                "img": "/menuSashimi/sashimi4.png"
+              },
+              {
+                
+                "title": "Fuji Feast ",
+                "date": "Lorem ipsum dolor sit amet consectetur adipisicing elit. In asperiores soluta reprehenderit, ab saepe aut dolorem dolores facilis placeat, iste doloribus?",
+                "price": "43 €",
+                "img": "/menuSashimi/sashimi5.png"
+              },
+              {
+                
+                "title": "Kyoto Delight",
+                "date": "Lorem ipsum dolor sit amet consectetur adipisicing elit. In asperiores soluta reprehenderit, ab saepe aut dolorem dolores facilis placeat, iste doloribus?",
+                "price": "19 €",
+                "img": "/menuSashimi/sashimi6.png"
+              } 
+        ]
+    },
+    {   "id": "3",
+        "name": "Udon",
+        "img": "./menuBar/udon.png",
+        "cards": [
+          {
+              
+              "title": "Udon Nor",
+              "date": "Lorem ipsum dolor sit amet consectetur adipisicing elit. In asperiores soluta reprehenderit, ab saepe aut dolorem dolores facilis placeat, iste doloribus?",
+              "price": "15 €",
+             "img": "/menuUdon/udon1.jpg"
+            },
+            {
+             
+              "title": " Udon Samurai",
+              "date": "Lorem ipsum dolor sit amet consectetur adipisicing elit. In asperiores soluta reprehenderit, ab saepe aut dolorem dolores facilis placeat, iste doloribus?",
+              "price": "19 €",
+              "img": "/menuUdon/udon2.jpg"
+            },
+            {
+             
+              "title": "Saku Udon supe",
+              "date": "Lorem ipsum dolor sit amet consectetur adipisicing elit. In asperiores soluta reprehenderit, ab saepe aut dolorem dolores facilis placeat, iste doloribus?",
+              "price": "23 €",
+              "img": "/menuUdon/udon3.jpg"
+            },
+            {
+             
+              "title": "Zen Udon",
+              "date": "Lorem ipsum dolor sit amet consectetur adipisicing elit. In asperiores soluta reprehenderit, ab saepe aut dolorem dolores facilis placeat, iste doloribus?",
+              "price": "28 €",
+              "img": "/menuUdon/udon3.jpg"
+            },
+            {
+              
+              "title": "Fujizu Udon misso",
+              "date": "Lorem ipsum dolor sit amet consectetur adipisicing elit. In asperiores soluta reprehenderit, ab saepe aut dolorem dolores facilis placeat, iste doloribus?",
+              "price": "13 €",
+              "img": "/menuUdon/udon4.jpg"
+            },
+            {
+              
+              "title": "Kyoto supe",
+              "date": "Lorem ipsum dolor sit amet consectetur adipisicing elit. In asperiores soluta reprehenderit, ab saepe aut dolorem dolores facilis placeat, iste doloribus?",
+              "price": "19 €",
+              "img": "/menuUdon/udon5.jpg"
+            } 
+      ]
+      },
+    {   "id": "4",
+        "name": "Nabe",
+        "img":"./menuBar/nabe.png",
+        "cards": [
+          {
+              
+              "title": "Nabe lable",
+              "date": "Lorem ipsum dolor sit amet consectetur adipisicing elit. In asperiores soluta reprehenderit, ab saepe aut dolorem dolores facilis placeat, iste doloribus?",
+              "price": "13 €",
+             "img": "/menuNabe/nabe1.png"
+            },
+            {
+             
+              "title": "Nabe lable",
+              "date": "Lorem ipsum dolor sit amet consectetur adipisicing elit. In asperiores soluta reprehenderit, ab saepe aut dolorem dolores facilis placeat, iste doloribus?",
+              "price": "12 €",
+             "img": "/menuNabe/nabe2.jpeg"
+            },
+            {
+             
+              "title": "Nabe lable",
+              "date": "Lorem ipsum dolor sit amet consectetur adipisicing elit. In asperiores soluta reprehenderit, ab saepe aut dolorem dolores facilis placeat, iste doloribus?",
+              "price": "16 €",
+             "img": "/menuNabe/nabe3.jpg"
+            },
+            {
+             
+              "title": "Nabe lable",
+              "date": "Lorem ipsum dolor sit amet consectetur adipisicing elit. In asperiores soluta reprehenderit, ab saepe aut dolorem dolores facilis placeat, iste doloribus?",
+              "price": "13 €",
+             "img": "/menuNabe/nabe4.jpeg"
+            },
+            {
+              
+              "title": "Nabe lable",
+              "date": "Lorem ipsum dolor sit amet consectetur adipisicing elit. In asperiores soluta reprehenderit, ab saepe aut dolorem dolores facilis placeat, iste doloribus?",
+              "price": "10 €",
+             "img": "/menuNabe/nabe5.jpg"
+            }
+  
+      ]
+
+    },
+    {   "id": "5",
+        "name": "Oden",
+        "img": "./menuBar/oden.png",
+        "cards": [
+          {
+              
+              "title": "Oden",
+              "date": "Lorem ipsum dolor sit amet consectetur adipisicing elit. In asperiores soluta reprehenderit, ab saepe aut dolorem dolores facilis placeat, iste doloribus?",
+              "price": "9 €",
+             "img": "/menuOden/oden1.png"
+            },
+            {
+             
+              "title": "Oden",
+              "date": "Lorem ipsum dolor sit amet consectetur adipisicing elit. In asperiores soluta reprehenderit, ab saepe aut dolorem dolores facilis placeat, iste doloribus?",
+              "price": "12 €",
+             "img": "/menuOden/oden2.jpg"
+            },
+            
+            {
+             
+              "title": "Oden",
+              "date": "Lorem ipsum dolor sit amet consectetur adipisicing elit. In asperiores soluta reprehenderit, ab saepe aut dolorem dolores facilis placeat, iste doloribus?",
+              "price": "6 €",
+             "img": "/menuOden/oden3.jpeg"
+          
+            },
+            {
+             
+              "title": "Oden",
+              "date": "Lorem ipsum dolor sit amet consectetur adipisicing elit. In asperiores soluta reprehenderit, ab saepe aut dolorem dolores facilis placeat, iste doloribus?",
+              "price": "12 €",
+             "img": "/menuOden/oden4.jpg"
+            },
+            {
+              
+              "title": "Oden",
+              "date": "Lorem ipsum dolor sit amet consectetur adipisicing elit. In asperiores soluta reprehenderit, ab saepe aut dolorem dolores facilis placeat, iste doloribus?",
+              "price": "9 €",
+             "img": "/menuOden/oden5.jpg"
+            },
+            {
+              
+              "title": "Oden",
+              "date": "Lorem ipsum dolor sit amet consectetur adipisicing elit. In asperiores soluta reprehenderit, ab saepe aut dolorem dolores facilis placeat, iste doloribus?",
+              "price": "13 €",
+             "img": "/menuOden/oden6.jpg"
+            } 
+      ]
+    },
+    {   "id": "6",
+        "name": "Miso",
+        "img": "./menuBar/miso.png",
+        "cards": [
+          {
+              
+              "title": "Miso",
+              "date": "Lorem ipsum dolor sit amet consectetur adipisicing elit. In asperiores soluta reprehenderit, ab saepe aut dolorem dolores facilis placeat, iste doloribus?",
+              "price": "5 €",
+             "img": "/menuMiso/miso1.avif"
+            },
+            {
+             
+              "title": "Miso",
+              "date": "Lorem ipsum dolor sit amet consectetur adipisicing elit. In asperiores soluta reprehenderit, ab saepe aut dolorem dolores facilis placeat, iste doloribus?",
+              "price": "5 €",
+             "img": "/menuMiso/miso2.jpeg"
+            },
+            
+            {
+             
+              "title": "Miso",
+              "date": "Lorem ipsum dolor sit amet consectetur adipisicing elit. In asperiores soluta reprehenderit, ab saepe aut dolorem dolores facilis placeat, iste doloribus?",
+              "price": "6 €",
+             "img": "/menuMiso/miso3.jpg"
+          
+            },
+            {
+              "title": "Miso",
+              "date": "Lorem ipsum dolor sit amet consectetur adipisicing elit. In asperiores soluta reprehenderit, ab saepe aut dolorem dolores facilis placeat, iste doloribus?",
+              "price": "8 €",
+             "img": "/menuMiso/miso4.avif"
+            },
+            {
+              
+              "title": "Miso garnelen",
+              "date": "Lorem ipsum dolor sit amet consectetur adipisicing elit. In asperiores soluta reprehenderit, ab saepe aut dolorem dolores facilis placeat, iste doloribus?",
+              "price": "5 €",
+             "img": "/menuMiso/miso5.jpg"
+            }]
+    },
+    {   "id": "7",
+        "name": "Soba",
+        "img": "./menuBar/soba.png",
+        "cards": [
+          {
+              
+              "title": "Soba",
+              "date": "Lorem ipsum dolor sit amet consectetur adipisicing elit. In asperiores soluta reprehenderit, ab saepe aut dolorem dolores facilis placeat, iste doloribus?",
+              "price": "14 €",
+             "img": "/menuSoba/soba1.webp"
+            },
+            {
+             
+              "title": "Soba",
+              "date": "Lorem ipsum dolor sit amet consectetur adipisicing elit. In asperiores soluta reprehenderit, ab saepe aut dolorem dolores facilis placeat, iste doloribus?",
+              "price": "14 €",
+             "img": "/menuSoba/soba2.webp"
+            },
+            
+            {
+             
+              "title": "Soba",
+              "date": "Lorem ipsum dolor sit amet consectetur adipisicing elit. In asperiores soluta reprehenderit, ab saepe aut dolorem dolores facilis placeat, iste doloribus?",
+              "price": "14 €",
+             "img": "/menuSoba/soba3.webp"
+          
+            },
+            {
+              "title": "Soba",
+              "date": "Lorem ipsum dolor sit amet consectetur adipisicing elit. In asperiores soluta reprehenderit, ab saepe aut dolorem dolores facilis placeat, iste doloribus?",
+              "price": "14 €",
+             "img": "/menuSoba/soba4.jpeg"
+            },
+            {
+              
+              "title": "Soba",
+              "date": "Lorem ipsum dolor sit amet consectetur adipisicing elit. In asperiores soluta reprehenderit, ab saepe aut dolorem dolores facilis placeat, iste doloribus?",
+              "price": "14 €",
+             "img": "/menuSoba/soba5.avif"
+            }
+      ]
+    },
+    {   "id": "8",
+        "name": "Guacamole",
+        "img": "./menuBar/guacamole.png",
+        "cards": [
+          {
+              
+              "title": "Guacamole",
+              "date": "Lorem ipsum dolor sit amet consectetur adipisicing elit. In asperiores soluta reprehenderit, ab saepe aut dolorem dolores facilis placeat, iste doloribus?",
+              "price": "3 €",
+             "img": "/menuGua/gua1.webp"
+            },
+            {
+             
+              "title": "Guacamole",
+              "date": "Lorem ipsum dolor sit amet consectetur adipisicing elit. In asperiores soluta reprehenderit, ab saepe aut dolorem dolores facilis placeat, iste doloribus?",
+              "price": "3 €",
+             "img": "/menuGua/gua2.jpg"
+            },
+            
+            {
+              "title": "Guacamole",
+              "date": "Lorem ipsum dolor sit amet consectetur adipisicing elit. In asperiores soluta reprehenderit, ab saepe aut dolorem dolores facilis placeat, iste doloribus?",
+              "price": "3 €",
+             "img": "/menuGua/gua3.jpg"
+          
+            },
+            {
+             
+              "title": "Guacamole",
+              "date": "Lorem ipsum dolor sit amet consectetur adipisicing elit. In asperiores soluta reprehenderit, ab saepe aut dolorem dolores facilis placeat, iste doloribus?",
+              "price": "3 €",
+             "img": "/menuGua/gua4.jpeg"
+            }
+      ]
+    },
+    {   "id": "9",
+        "name": "Drinks",
+        "img": "./menuBar/sake.png",
+        "cards": [
+          {
+              
+              "title": "Coctails",
+              "date": "Lorem ipsum dolor sit amet consectetur adipisicing elit. In asperiores soluta reprehenderit, ab saepe aut dolorem dolores facilis placeat, iste doloribus?",
+              "price": "4,5 €",
+             "img": "/menuDrink/drink1.webp"
+            },
+            {
+             
+              "title": "Coctails",
+              "date": "Lorem ipsum dolor sit amet consectetur adipisicing elit. In asperiores soluta reprehenderit, ab saepe aut dolorem dolores facilis placeat, iste doloribus?",
+              "price": "4.5 €",
+             "img": "/menuDrink/drink2.webp"
+            },
+            
+            {
+             
+              "title": "Coctails",
+              "date": "Lorem ipsum dolor sit amet consectetur adipisicing elit. In asperiores soluta reprehenderit, ab saepe aut dolorem dolores facilis placeat, iste doloribus?",
+              "price": "5 €",
+             "img": "/menuDrink/drink3.jpg"
+          
+            },
+            {
+             
+              "title": "Coctails",
+              "date": "Lorem ipsum dolor sit amet consectetur adipisicing elit. In asperiores soluta reprehenderit, ab saepe aut dolorem dolores facilis placeat, iste doloribus?",
+              "price": "7 €",
+             "img": "/menuDrink/drink4.webp"
+            },
+            {
+              
+              "title": "Coctails",
+              "date": "Lorem ipsum dolor sit amet consectetur adipisicing elit. In asperiores soluta reprehenderit, ab saepe aut dolorem dolores facilis placeat, iste doloribus?",
+              "price": "2.5 €",
+             "img": "/menuDrink/drink5.webp"
+            }
+      ]
+    }
+]

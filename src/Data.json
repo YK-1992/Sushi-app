@@ -1,0 +1,30 @@
+[
+  {
+    
+    "title": "Schnelle Lieferung",
+    "date": "Wir liefern in nicht mehr als 60 Minuten",
+    "img": "/Group.png",
+    "color": "rgba(243, 20, 20, 0.09)"
+  },
+  {
+    
+    "title": "Einzigartige Küche",
+    "date": "Ein einzigartiges Rezept Japanische Küche",
+    "img": "/book.png",
+    "color": "rgba(20, 0, 255, 0.05)"
+  },
+  {
+   
+    "title": "Erfahrene Köche",
+    "date": "Ständige Aufsicht durch einen erfahrenen Küchenchef",
+    "img": "/cooking.png",
+    "color": "rgba(255, 153, 0, 0.05)"
+  },
+  {
+   
+    "title": "Bequeme Bezahlung",
+    "date": "Wir akzeptieren jede Zahlungsmethode",
+    "img": "/wallet.png",
+    "color": "rgba(112, 255, 0, 0.05)"
+  }
+]

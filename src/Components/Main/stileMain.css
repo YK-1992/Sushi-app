@@ -1,0 +1,59 @@
+.main-section{
+     min-height: 100vh;
+     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('..//..//../public/sushiset.jpg');
+     background-size: cover;
+     background-repeat: no-repeat;
+    
+     background-position: center;
+     color: white;
+}
+
+.main-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10rem;
+    text-align: center;
+
+
+    
+}
+.main-text h1{
+    font-size: 66px;
+    text-transform: uppercase;
+    font-weight: 400;
+    text-shadow: 1px 1px 10px rgb(253 252 252);
+     
+}
+
+.main-text p{
+    font-size: 19px;
+    font-weight: 400;
+    text-shadow: 0px 1px 5px rgb(94, 92, 92);
+}
+
+
+@media (max-width: 768px) {
+
+    .main-section{
+        background-size: auto 100%; /* Уменьшить ширину изображения на мобильных */
+    background-attachment: scroll;
+    }
+    .main-text{
+        padding-top: 5rem;
+    }
+    .main-text h1 {
+        font-size: 66px;
+        font-weight: 400;
+        text-shadow: 1px 1px 10px rgb(253 252 252);
+    }
+
+    .main-text p{
+        font-size: 19px;
+        padding-left: 1rem;
+        padding-right: 1rem;
+   
+      
+    }
+}

@@ -1,0 +1,39 @@
+.title-costumer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+.comment-slider-block {
+    display: flex !important;
+    gap: 2rem;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.slider-components {
+    font-size: 13px;
+    display: flex;
+    flex-direction: column;
+    max-width: 250px;
+    height: 210px;
+    padding: 1rem;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 17px;
+    background: repeating-linear-gradient(0deg, rgba(239, 239, 239, 1), rgba(239, 239, 239, 1) 34%, white 17%, white 100%);
+}
+
+.avatarMenu {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding-top: 2rem;
+    margin-left: 1rem;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+}
