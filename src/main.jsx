@@ -6,7 +6,6 @@ import ErrorPro from './Components/ErrorPro.jsx';
 import AboutContent from './Components/About/AboutContent.jsx';
 import MenuContent from './Components/MenuBar/MenuContent.jsx';
 import Contact from './Components/Contact/Contact.jsx';
-import DellPack from './Components/Delivery/DellPack.jsx';
 import Layout from './Components/Loyout.jsx';
 import {Provider} from 'react-redux'
 import {store} from './redux/store'
@@ -41,11 +40,6 @@ const router = createBrowserRouter([
     {
       path:'/menu',
       element: <MenuContent/>,
-      errorElement: <ErrorPro/>
-    },
-    {
-      path:'/delivery',
-      element: <DellPack/>,
       errorElement: <ErrorPro/>
     },
     {

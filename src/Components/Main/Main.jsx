@@ -1,5 +1,5 @@
 import Header from '../Header/Header';
-import { motion } from "motion/react"
+import { motion } from 'framer-motion'
 import './stileMain.css'
 
 const MainSection = ()=> {
@@ -13,13 +13,10 @@ const MainSection = ()=> {
 
                 <p>Willkommen in der Sushi-Bar</p>
                 <motion.h1 
-                 initial={{ x: -500, opacity: 0}}
-                 animate={{ x: 0, opacity: 1}}
-                 transition={{
-                     duration: 3.5,
-    
-                    staggerChildren: 0.1
-                 }}
+                 viewport={{ once: true, amount: 0.5 }}
+              initial={{opacity: 0, x: -100, scale: 0.1}}
+              whileInView={{opacity: 1, x: 0, scale: 1}}
+              transition={{duration: 3 }}
                 
                 >Kyoto Cravings</ motion.h1> 
                 <p>Die beste Bar mit der Seele und der Kultur Japans</p>

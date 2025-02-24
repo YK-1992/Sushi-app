@@ -9,7 +9,9 @@
     padding-top: 3rem;
     padding-right: 2rem;
     padding-bottom: 1rem;
-    background-color: rgba(55, 55, 55, 0.2);
+    background-color:     rgb(0 0 0 / 75%);  
+      z-index: 1;
+    ;
     z-index: 1;
   }
   
@@ -18,6 +20,7 @@
     align-items: center;
     gap: 1rem;
     padding-left: 2rem;
+    color: aliceblue;
   }
   
   .logo-header__icon {
@@ -32,11 +35,13 @@
   .logo-header__name {
     font-size: 20px;
     text-transform: uppercase;
+    color: aliceblue;
   }
   
   .nav-section {
     display: flex;
     flex-wrap: wrap;
+
   }
   
   .burger-btn {
@@ -51,22 +56,21 @@
     gap: 4rem;
     padding-right: 4rem;
     opacity: 1;
-    transform: scale(1);
-    transition: opacity 0.3s ease, transform 0.3s ease;
+  
   }
   
   .nav-menu a {
-    color: white;
+    color: rgb(255, 255, 255);
     text-decoration: none;
     transition: color 0.3s ease, text-decoration-color 0.3s ease;
   }
   
   .nav-menu a:hover {
     cursor: pointer;
-    color: rgb(11, 11, 11);    
+    color: rgb(255, 98, 0);    
     text-decoration-line: underline;
     text-underline-offset: 1rem;
-    text-decoration-color: rgb(255, 255, 255);
+    text-decoration-color: rgb(255, 98, 0);
   }
   
 
@@ -93,18 +97,20 @@
     
 
     }
-  
+    .btn-stile:hover{
+      color: orange;
+    }
+
+  /* navbar */
     .nav-menu {
       position: absolute;
       left: 0;
-      top: -2rem;
+      top: 0;
       flex-direction: column;
       display: none;
      
       background: rgba(17, 17, 17, 0.685);
       border: 1px solid rgb(12, 12, 12);
-      border-bottom-right-radius: 10px;
-      height: max-content;
       width: 35%;
       padding: 10rem 3rem;
       gap: 1rem;
@@ -126,13 +132,27 @@
       font-weight: 500;
     }
   }
+
+
+  /* media */
   
   @media  (max-width: 768px){
     .logo-header__icon {
       font-size: 14px;
   }
   .logo-header__name {
-    font-size: 13px;
+    font-size: 16px;
+    font-weight: 500;
 }
-
+.container-header{
+  padding-right: 1rem;
+}
   }
+
+  @media (max-width: 340px) {
+    .logo-header__name {
+        font-size: 13px;
+    }
+  
+  
+}

@@ -1,7 +1,7 @@
 import CostumerDate from "/src/CostumerDate.json";
 import { Avatar } from "@mui/material";
 import './costumer.css'
-
+import {motion} from "motion/react"
 
 const CostumerComment = () =>{
 
@@ -12,7 +12,16 @@ const CostumerComment = () =>{
 <h1>Besucher empfehlen</h1>
 
 
-<div className="comment-slider-block">
+<motion.div
+   initial={{ opacity: 0, scale: 0 }}
+   whileInView={{ opacity: 1, scale: 1 }}
+   viewport={{ once: true, amount: 0.5 }}
+   transition={{
+       duration: 1,
+       scale: { type: "spring", visualDuration: 3, bounce: 0.3 }
+      
+   }}
+className="comment-slider-block">
 
 {CostumerDate.map((item, index) =>( 
     <div className="slider-components"key={index}>
@@ -31,7 +40,7 @@ const CostumerComment = () =>{
 
 }
 
-</div>    
+</motion.div>    
 
 
 

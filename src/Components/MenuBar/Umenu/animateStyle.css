@@ -1,0 +1,23 @@
+.section__uMenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+  }
+  
+  .uMenu__container {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .uMenu__animate {
+    display: flex;
+    gap: 2rem;
+  }
+  
+ 
+  
+ 

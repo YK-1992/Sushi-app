@@ -1,3 +1,11 @@
+.section--about{
+    min-height: 100vh;
+    background-image: url('..//..//../public/about_us_back.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    background-position: center center; 
+}
 .container-about{
     display: flex;
     flex-direction: column;
@@ -38,6 +46,7 @@ justify-content: center;
     
 }
 .about-inform-block{
+   
 display: flex; 
 flex-wrap: wrap;
 justify-content: center;
@@ -68,23 +77,28 @@ flex-direction: column;
     justify-content: center;
     gap: 1rem;
     padding: 1rem;
-    padding-bottom: 2rem;
+    padding-bottom: 2rem; 
     
 }
 @media  (max-width: 768px) {
 
     .about-date{
         width: 290px;
-        height: 60%;
+        min-height: 60%;
     }
     .about-date h3{
-        font-size: 13px;
+        font-size: 16px;
     }
     .about-date h5{
-        font-size: 11px;
+        font-size: 13px;
     }
     .about-date p{
-        font-size: 9px;
+        font-size: 13px;
     }
 
+    .about-date-container {
+
+        gap: 2rem;
+        
+    }
 }

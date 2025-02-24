@@ -1,5 +1,4 @@
 .footer-section{
-    padding-top: 4rem;
     height: 60vh;
 
 }
@@ -74,6 +73,7 @@ margin: -2px;
     @media  (max-width: 768px) {
 
         .contact-block{
+            width: 270px;
             top: 60px;
             left: 34px;
         }

@@ -1,0 +1,122 @@
+
+.contact-section{
+    width: 100%;
+}
+.contact-container{
+    padding-top: 8rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 2em;
+
+}
+.contact__text-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-message-section{
+    width: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 3rem;
+    border: 0.1px solid rgb(199, 198, 198);
+    box-shadow: 0px 0px 6px 1px gainsboro;
+    
+    border-radius: 20px;
+    background: rgb(251 251 251 / 55%);
+}
+.contact__talk-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+
+.contact-message-section img{
+    width: 64px;
+}
+/* Contact-Form */
+
+.contact-section-form{
+    padding-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6rem;
+    
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+    
+}
+.contact-form h1{
+
+    text-align: center;
+    
+}
+
+
+
+.contact-form label{
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.contact-form input{
+  
+   width:570px;
+   height: 78px;
+   padding-left: 20px;
+   border-radius: 12px;
+   border: 0.1px solid rgb(199, 198, 198);
+   box-shadow: 0px 0px 6px 1px gainsboro;
+}
+.contact-form textarea{
+  
+   width:450px;
+   padding: 20px;
+   border-radius: 12px;
+   border: 0.1px solid rgb(199, 198, 198);
+   box-shadow: 0px 0px 6px 1px gainsboro;
+   
+}
+
+.btn-contact-submit{
+   width: 17vh;
+   font-size: 14px;
+    display: flex;
+    gap: 3px;
+    align-items: center;
+    justify-content: center;
+}
+
+.h1-ts{
+    font-size: 22px;
+}
+
+@media screen and (max-width: 997px) {
+    .h1-ts {
+        font-size: 25px;
+        font-weight: 500;
+    }
+    .contact-form input {
+        width: 350px;
+        height: 63px;
+    }
+  
+    .contact-form textarea {
+        width: 350px;
+    }
+.btn{
+    margin: 0 auto;
+}  
+}

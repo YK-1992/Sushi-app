@@ -1,31 +1,44 @@
 import "./header.css";
 import ShoppingBagTwoToneIcon from "@mui/icons-material/ShoppingBagTwoTone";
-import LoginTwoToneIcon from "@mui/icons-material/LoginTwoTone";
-import MenuIcon from '@mui/icons-material/Menu';
-import { IconButton} from "@mui/material";
-import Badge, { badgeClasses } from '@mui/material/Badge';
-import { styled } from '@mui/material/styles';
-import { useState } from "react";
-
-import { Link} from "react-router-dom";
+import MenuIcon from "@mui/icons-material/Menu";
+import {IconButton, Badge} from "@mui/material";
+import { styled } from "@mui/material/styles";
+import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
+import { useState, useRef, useEffect } from "react";
+
 
 const CartBadge = styled(Badge)`
-  & .${badgeClasses.badge} {
+  & .MuiBadge-badge {
     top: -12px;
     right: -6px;
   }
 `;
-const Header = () => {
 
-  const {items} = useSelector(state => state.card)
-    const [isOpen, setIsOpen] = useState(false);
-    const toggleMenu = () =>{
-        setIsOpen(!isOpen)
+const Header = () => {
+  const { items } = useSelector((state) => state.card);
+  const [isOpen, setIsOpen] = useState(false);
+  const navSectRef = useRef(null);
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+  const CloseMenu = () => {
+    setIsOpen(false)
+  }
+
+  useEffect (() => {
+    const handClickOutside = (e) =>{
+      if (navSectRef.current && !navSectRef.current.contains(e.target)){
+        CloseMenu();
+      }
     };
+    document.addEventListener('mousedown', handClickOutside);
+    return ()=>{
+      document.removeEventListener('mousedown', handClickOutside);
+    };
+  }, []);
 
   return (
-
     <>
       <header className="container-header">
         <div className="logo-header">
@@ -39,43 +52,42 @@ const Header = () => {
           </div>
         </div>
 
-   
-
-        <div className="nav-section"  >
-          
-          <IconButton className="burger-btn" aria-label="burger" sx={{ color: "white" }} onClick={toggleMenu}>
-          <MenuIcon />
-            </IconButton>  
-          <div className={`nav-menu ${isOpen ? "active" : ""}`} >
-            <Link to ="/home">Home</Link>
-            <Link to="/menu">Menu</Link>
-            <Link to="/about">About</Link>
-            <Link to="/delivery">Lieferung</Link>
-            <Link to="/contact">Contact</Link>
+        <div className="nav-section" ref={navSectRef}>
+          <IconButton
+            className="burger-btn"
+            aria-label="burger"
+            sx={{ color: "white" }}
+            onClick={toggleMenu}
+          >
+            <MenuIcon />
+          </IconButton>
+          <div className={`nav-menu ${isOpen ? "active" : ""}`}>
+            <Link to="/home" onClick={CloseMenu}>Home</Link>
+            <Link to="/menu" onClick={CloseMenu}>Menu </Link>
+            <Link to="/about" onClick={CloseMenu}>About</Link>
+            <Link to="/contact" onClick={CloseMenu}>Contact</Link>
           </div>
 
-
-      
-
-          <Link to='/basket'>
-          <IconButton aria-label="shop" sx={{ color: "white" }}>
+          <Link to="/basket">
+            <IconButton  aria-label="shop" 
+            sx={{color: "white",
+      transition: "color 0.3s ease",
+      "&:hover": { color: "rgb(255, 98, 0))" },
+      "&:active": { color: "rgb(255, 98, 0)" }}}>
               <ShoppingBagTwoToneIcon />
-              <CartBadge badgeContent={items.length} color="primary" overlap="circular" />
+              <CartBadge
+                badgeContent={items.length}
+                color="primary"
+                overlap="circular"
+              />
             </IconButton>
           </Link>
-      
 
-            <IconButton aria-label="login two" sx={{ color: "white" }}>
-              <LoginTwoToneIcon />
-            </IconButton>
-       
+      
         </div>
       </header>
-
-  
     </>
-
- 
   );
 };
+
 export default Header;

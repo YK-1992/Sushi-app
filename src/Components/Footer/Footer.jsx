@@ -1,4 +1,5 @@
 import './footerStyle.css'
+import { Link } from 'react-router-dom';
 import { AiOutlineWhatsApp } from "react-icons/ai";
 import { FaTelegram } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
@@ -60,10 +61,9 @@ endet um 20:00 Uhr.</span>
         </div>
 
         <div className="footer-menu-block">
-            <a href="#">Menu</a>
-            <a href="#">Action</a>
-            <a href="#">Lieferung</a>
-            <a href="#">Contact</a>
+            <Link to="/menu">Menu</Link>
+           <Link to="/about">About</Link>
+            <Link to="/contact">Contact</Link>
         </div>
         <div className="footer-social-link">
             <a href="#"><AiOutlineWhatsApp size={23}/></a>

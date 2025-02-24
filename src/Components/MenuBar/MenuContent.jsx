@@ -19,6 +19,7 @@ import "../MenuBar/Umenu/Umenu.css";
 import {useDispatch} from 'react-redux';
 import axios from 'axios'
 import { addItem } from '..//../redux/slises/cardSlice';
+
 const theme = createTheme({
   palette: {
     primary: lime,
@@ -51,12 +52,19 @@ const MenuContent = ()=> {
 if (loading) {
   return <p>Loading...</p>;
 }
+
   return (
-    <Box sx={{ display: "flex", justifyContent: "center" , paddingTop: 7, background: "rgb(234 116 116 / 2%)" }}>
-      <div className="container-UMenu">
-        <Tabs
+    <section className="section--umenu">
+        
+       <Box sx={{ paddingTop: "4rem", display: "flex", justifyContent: "center", width: "100%",  background: "rgb(234 116 116 / 2%)" }}>
+     
+     
+
+<Tabs 
           value={selectedTab}
+         
           sx={{
+                
             ".MuiTabs-indicator": {
               backgroundColor: "#FFA667",
               color: "#FFA667",
@@ -75,6 +83,7 @@ if (loading) {
                   color: "rgba(0, 0, 0, 0.6)",
                   "&.Mui-selected": {
                     color: "darkorange",
+        
               
                   },
                 }}
@@ -99,20 +108,18 @@ if (loading) {
           })}
         </Tabs>
 
+        </Box>
+         <div className="container-UMenu">
+
         <Container sx={{ paddingTop: 7, paddingBottom: 6 }} className="card-position">
         
             {items[selectedTab].cards.map((result, index) => (
-              <Card
-                sx={{
-                  maxWidth: 280,
-                  minHeighth: 320,
-                  borderRadius: 3,
-                  boxShadow: "1px 0px 4px grey",
-                }}
+              <Card className="card-style"
+             
                 key={index}
              >
                 <CardMedia
-                  sx={{ height: 180, margin: "0 auto" }}
+                  sx={{ height: 190, margin: "0 auto" }}
                   component="img"
                   alt="sashimi"
                   image={result.img}
@@ -125,7 +132,7 @@ if (loading) {
                     variant="body2"
                     sx={{
                       color: "text.secondary",
-                      fontSize: 12,
+                      fontSize: 13,
                       fontWeight: 500,
                     }}
                   >
@@ -157,7 +164,10 @@ if (loading) {
         
         </Container>
       </div>
-    </Box>
+   
+   
+    </section>
+    
   );
 }
 
