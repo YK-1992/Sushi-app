@@ -3,19 +3,20 @@ import Button from "@mui/material/Button";
 import DeleteIcon from "@mui/icons-material/Delete";
 import Stack from "@mui/material/Stack";
 import { IconButton,createTheme, ThemeProvider } from "@mui/material";
-import { lime, orange } from "@mui/material/colors";
+import {  orange } from "@mui/material/colors";
 
 import { useDispatch, useSelector } from "react-redux";
 import { removeItem, clearItem, increaseQuantity, decreaseQuantity } from "../../redux/slises/cardSlice";
 import Basket from "./Basket";
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
+import CheckoutForm from "../CheckoutForm/CheckoutForm";
 const BasketAdds = () => {
   const dispatch = useDispatch();
   const { items = [], totalPrice = 0 } = useSelector((state) => state.card) || {};
   const theme = createTheme({
     palette: {
-      primary: lime,
+      primary: orange,
       secondary: orange,
     },
   });
@@ -81,9 +82,14 @@ const BasketAdds = () => {
             Prise bestellen: <span>{totalPrice.toFixed(2)} €</span>
           </p>
 
-          <ThemeProvider theme={theme}>
-            <Button variant="contained">Einkaufen</Button>
-          </ThemeProvider>
+
+
+          {/* <ThemeProvider theme={theme}>
+            <Button variant="contained"><CheckoutForm/></Button>
+          </ThemeProvider> */}
+          <div>
+            <CheckoutForm/>
+          </div>
         </div>
       </div>
     </section>
