@@ -1,21 +1,3 @@
-// import axios from "axios";
-
-// const CheckoutForm = () => {
-//   const handlePayment = async () => {
-//     try {
-//       const response = await axios.post("http://localhost:3000/payment");
-//       if (response.data.url) {
-//         window.location.href = response.data.url; // Перенаправление на страницу оплаты
-//       }
-//     } catch (error) {
-//       console.error("Ошибка платежа:", error);
-//     }
-//   };
-
-//   return <div onClick={handlePayment}>Payment</div>;
-// };
-
-// export default CheckoutForm;
 
 import axios from "axios";
 import Button from "@mui/material/Button";

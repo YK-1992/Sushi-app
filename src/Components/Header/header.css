@@ -108,10 +108,9 @@
       top: 0;
       flex-direction: column;
       display: none;
-     
-      background: rgba(17, 17, 17, 0.685);
+      background: rgba(17, 17, 17, 0.812);
       border: 1px solid rgb(12, 12, 12);
-      width: 35%;
+      width: 78%;
       padding: 10rem 3rem;
       gap: 1rem;
       pointer-events: none;
