@@ -18,6 +18,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: '/home',
+        index: true,
         element: <App />,
       },
       {
@@ -37,7 +38,7 @@ const router = createBrowserRouter([
         element: <BasketAdds />,
       },
       {
-        index: true, // Перенаправление с "/" на "/home"
+        index: true,
         element: <App />,
       },
     ],
