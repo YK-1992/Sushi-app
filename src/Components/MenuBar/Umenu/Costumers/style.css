@@ -44,7 +44,9 @@
 
 @media (max-width: 768px) {
 
-
+.container__costumer{
+    overflow: hidden;
+}
     .costumer-st{
         display: flex;
         flex-direction: column-reverse;

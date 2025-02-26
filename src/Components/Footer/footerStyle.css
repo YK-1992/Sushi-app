@@ -87,3 +87,10 @@ margin: -2px;
     }
     
     }
+    @media (max-width: 340px) {
+        .contact-block {
+            width: 270px;
+            top: 60px;
+            left: 8px;
+        }
+    }

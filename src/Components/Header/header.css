@@ -9,7 +9,10 @@
     padding-top: 3rem;
     padding-right: 2rem;
     padding-bottom: 1rem;
-    background-color:     rgb(0 0 0 / 75%);  
+    background: #000000;  
+    background: -webkit-linear-gradient(to right, #434343, #000000);  
+    background: linear-gradient(to right, #434343, #000000); 
+    
       z-index: 1;
     ;
     z-index: 1;
@@ -143,14 +146,15 @@
     font-size: 16px;
     font-weight: 500;
 }
-.container-header{
-  padding-right: 1rem;
-}
+
   }
 
   @media (max-width: 340px) {
     .logo-header__name {
         font-size: 13px;
+    }
+    .container-header{
+      padding-right: 0;
     }
   
   

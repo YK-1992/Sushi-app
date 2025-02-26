@@ -60,7 +60,8 @@ const Contact = forwardRef ((props, ref)=> {
     return(
         <section ref={ref} className="contact-section">
             <div className="contact-container">
-                <div className="contact__text-title"> <h1 className='text-fonts gradient-text'>Contact Me</h1>
+                <div className="contact__text-title">
+                  <h1 className='text-fonts gradient-text'>Contact Me</h1>
                 <p>Get in touch</p></div>
 
 
@@ -78,11 +79,7 @@ const Contact = forwardRef ((props, ref)=> {
                        <span>Whatsapp</span>
                        <span>+49177-973-65-54</span>
                     </div>
-                    <div className="contact-message-section">
-                       <img src="./telegram.png" alt="" className='logo'/>
-                       <span>Telegram</span>
-                       <span>@khambir777</span>
-                    </div>
+                  
                     
                 </div>
 

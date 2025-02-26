@@ -1,4 +1,3 @@
-
 import { useEffect, useState } from "react";
 import {
   Container,
@@ -16,9 +15,9 @@ import {
 } from "@mui/material";
 import { lime, orange } from "@mui/material/colors";
 import "../MenuBar/Umenu/Umenu.css";
-import {useDispatch} from 'react-redux';
-import axios from 'axios'
-import { addItem } from '..//../redux/slises/cardSlice';
+import { useDispatch } from "react-redux";
+import axios from "axios";
+import { addItem } from "..//../redux/slises/cardSlice";
 
 const theme = createTheme({
   palette: {
@@ -27,9 +26,8 @@ const theme = createTheme({
   },
 });
 
-
-const MenuContent = ()=> {
-  const dispatch = useDispatch(); 
+const MenuContent = () => {
+  const dispatch = useDispatch();
   const [selectedTab, setSelectedTab] = useState(0);
   const [items, setItems] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -37,34 +35,36 @@ const MenuContent = ()=> {
     setSelectedTab(newValue);
   };
   const handleAddToCart = (item) => {
-    dispatch(addItem(item));  // Добавляем товар в корзину
+    dispatch(addItem(item)); // Добавляем товар в корзину
   };
- //server Back simulation
- useEffect(() => {
-  axios.get(`https://67963810bedc5d43a6c4994f.mockapi.io/shushiStore`)
-  .then((res) =>  {
-    setItems(res.data);
-    setLoading(false);
-       });
-}, []);
+  //server Back simulation
+  useEffect(() => {
+    axios
+      .get(`https://67963810bedc5d43a6c4994f.mockapi.io/shushiStore`)
+      .then((res) => {
+        setItems(res.data);
+        setLoading(false);
+      });
+  }, []);
 
-
-if (loading) {
-  return <p>Loading...</p>;
-}
+  if (loading) {
+    return <p>Loading...</p>;
+  }
 
   return (
     <section className="section--umenu">
-        
-       <Box sx={{ paddingTop: "4rem", display: "flex", justifyContent: "center", width: "100%",  background: "rgb(234 116 116 / 2%)" }}>
-     
-     
-
-<Tabs 
+      <Box
+        sx={{
+          paddingTop: "4rem",
+          display: "flex",
+          justifyContent: "center",
+          width: "100%",
+          background: "rgb(234 116 116 / 2%)",
+        }}
+      >
+        <Tabs
           value={selectedTab}
-         
           sx={{
-                
             ".MuiTabs-indicator": {
               backgroundColor: "#FFA667",
               color: "#FFA667",
@@ -83,8 +83,6 @@ if (loading) {
                   color: "rgba(0, 0, 0, 0.6)",
                   "&.Mui-selected": {
                     color: "darkorange",
-        
-              
                   },
                 }}
                 key={item.id}
@@ -107,68 +105,62 @@ if (loading) {
             );
           })}
         </Tabs>
-
-        </Box>
-         <div className="container-UMenu">
-
-        <Container sx={{ paddingTop: 7, paddingBottom: 6 }} className="card-position">
-        
-            {items[selectedTab].cards.map((result, index) => (
-              <Card className="card-style"
-             
-                key={index}
-             >
-                <CardMedia
-                  sx={{ height: 190, margin: "0 auto" }}
-                  component="img"
-                  alt="sashimi"
-                  image={result.img}
-                />
-                <CardContent>
-                  <Typography gutterBottom variant="h5" component="div">
-                    {result.title}
-                  </Typography>
-                  <Typography
-                    variant="body2"
-                    sx={{
-                      color: "text.secondary",
-                      fontSize: 13,
-                      fontWeight: 500,
-                    }}
-                  >
-                    {result.date}
-                  </Typography>
-                </CardContent>
-                <CardActions
-                  className="cardStile"
+      </Box>
+      <div className="container-UMenu">
+        <Container
+          sx={{ paddingTop: 7, paddingBottom: 6 }}
+          className="card-position"
+        >
+          {items[selectedTab].cards.map((result, index) => (
+            <Card className="card-style" key={index}>
+              <CardMedia
+                sx={{ height: 190, margin: "0 auto" }}
+                component="img"
+                alt="sashimi"
+                image={result.img}
+              />
+              <CardContent>
+                <Typography gutterBottom variant="h5" component="div">
+                  {result.title}
+                </Typography>
+                <Typography
+                  variant="body2"
                   sx={{
-                    display: "flex",
-
-                    justifyContent: "space-around",
+                    color: "text.secondary",
+                    fontSize: 13,
+                    fontWeight: 500,
                   }}
                 >
-                  <ThemeProvider theme={theme} sx={{ paddingTop: "1rem" }}>
-                    <p>{result.price}</p>
-                    <Button
-                      variant="contained"
-                      color="secondary"
-                      size="large"
-                      sx={{ ml: 3 }} onClick={() => handleAddToCart(result)}
-                    >
-                      Warenkorb
-                    </Button>
-                  </ThemeProvider>
-                </CardActions>
-              </Card>
-            ))}
-        
+                  {result.date}
+                </Typography>
+              </CardContent>
+              <CardActions
+                className="cardStile"
+                sx={{
+                  display: "flex",
+
+                  justifyContent: "space-around",
+                }}
+              >
+                <ThemeProvider theme={theme} sx={{ paddingTop: "1rem" }}>
+                  <p>{result.price}</p>
+                  <Button
+                    variant="contained"
+                    color="secondary"
+                    size="large"
+                    sx={{ ml: 3 }}
+                    onClick={() => handleAddToCart(result)}
+                  >
+                    Warenkorb
+                  </Button>
+                </ThemeProvider>
+              </CardActions>
+            </Card>
+          ))}
         </Container>
       </div>
-   
-   
     </section>
-    
   );
-}
+};
 
 export default MenuContent;

@@ -10,7 +10,7 @@ import { motion } from "framer-motion";
 const UMenu = () => {
   const [slideIndex, setSlideIndex] = useState(0);
 
-  // Проверяем, есть ли данные
+  
   if (!DataE || DataE.length === 0) return null;
 
   const totalSlides = DataE.length;
@@ -19,7 +19,7 @@ const UMenu = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setSlideIndex((prevIndex) => (prevIndex + 1) % totalSlides);
-    }, 6000);
+    }, 4000);
     return () => clearInterval(interval);
   }, [totalSlides]);
 
@@ -34,7 +34,7 @@ const UMenu = () => {
               initial={{ opacity: 0, x: 100 }}
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: -100 }}
-              transition={{ type: "tween", duration: 0.4, ease: "easeInOut" }}
+              transition={{ type: "tween", duration: 0.3, ease: "easeInOut" }}
             >
               <Card sx={{ width: 340, height: 230, borderRadius: 10 }}>
                 <CardActionArea>
