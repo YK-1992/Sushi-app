@@ -33,7 +33,7 @@ const Costumers = () =>{
     <div className="inform__costumer costumer-st">
       
         <motion.div
-         initial={{opacity: 0, x: -100, scale: 0.8}}
+         initial={{opacity: 0, x: -400, scale: 0.8}}
          whileInView={{opacity: 1, x: 0, scale: 1}}
          transition={{duration: 3, }}
          viewport={{ once: true, amount: 0.2 }}

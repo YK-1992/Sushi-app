@@ -1,10 +1,6 @@
 .section--about{
-    min-height: 100vh;
-    background-image: url('..//..//../public/about_us_back.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    
-    background-position: center center; 
+
+   
 }
 .container-about{
     display: flex;

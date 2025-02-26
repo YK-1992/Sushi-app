@@ -43,7 +43,11 @@
 
 
 @media (max-width: 768px) {
-
+.section__costumer{
+    padding-top: 5rem;
+   
+    
+}
 .container__costumer{
     overflow: hidden;
 }

@@ -40,7 +40,7 @@ const MenuContent = () => {
   //server Back simulation
   useEffect(() => {
     axios
-      .get(`https://67963810bedc5d43a6c4994f.mockapi.io/shushiStore`)
+      .get(`https://67963810bedc5d43a6c4994f.mockapi.io/sushiStore1`)
       .then((res) => {
         setItems(res.data);
         setLoading(false);
