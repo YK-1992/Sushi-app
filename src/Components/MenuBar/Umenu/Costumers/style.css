@@ -54,6 +54,7 @@
 
 
     .img__container img{
+        width: 340px;
         height: 55vh;       
     }
 
